@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block page_title %}Favorite Course{% endblock %}
+
+{% block page_head %}What is Your Favorite Course?{% endblock %}
+
+{% block page_content %}
+    {# Content for displaying your favorite page #}
+    <h3>You entered your favorite course as: {{request.args.get("course_subject")}} {{request.args.get("course_number")}} </h3>
+    <h3>Great Choice!</h3>
+    <p> </p>
+    {# Description of how to use the course for the viewer #}
+    <h5>How to Use This:</h5>
+    <p> Copy this and paste it into the back of the url putting the course subject where the 'x' is and the course number where the 'y' is: ?course_subject=x&course_number=y </p>
+
+
+
+
+{% endblock %}
