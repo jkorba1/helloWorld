@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{# Making sure training is selected #}
+{% block page_head %}
+    {% if action and action == 'training' %}
+        Training
+        {% endif %}
+    {% endif %}
+{% endblock %}
+
+{% block page_content %}
+{# Inserting the message that the training website is down #}
+    <h2>
+        Welcome to your training for the TerpSys Student Information System. Training materials are currently under construction, but will be created very soon. Please check back soon or email Jacob Korba at <a href="mailto:jkorba1@terpmail.umd.edu"> jkorba1@terpmail.umd.edu </a>if you wish to be placed on the waiting list.
+    </h2>
+
+{% endblock %}
